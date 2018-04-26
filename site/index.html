@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Markdown Editor</title>
+    <link rel="stylesheet" type="text/css" href="site://style.css" />
+    <link rel="stylesheet" type="text/css" href="site://highlight-style.css" />
+    <link rel="stylesheet" type="text/css" href="site://markdown.css" />
+  </head>
+  <body>
+    <div id="topbar">
+      <div id="filepath"></div>
+    </div>
+    <div id="content">
+      <div id="editor">[github.com](https://www.github.com)</div>
+      <div id="preview-container">
+	<div id="preview" class="markdown-body">
+	</div>
+      </div>
+    </div>
+
+    <div id="save-popup" class="popup">
+      File saved.
+    </div>
+    
+    <script src="site://ace-builds/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="site://main.js"></script>
+  </body>
+</html>

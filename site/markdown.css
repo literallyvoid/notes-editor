@@ -1,0 +1,34 @@
+.markdown-body {
+    color: #252525;
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    background-color: #e8e8e8;
+}
+
+code:not(.hljs) {
+    background-color: #f3f3f3;
+    padding: 4px;
+}
+
+code {
+    border-radius: 4px;
+}
+
+a {
+    text-decoration: none;
+    color: #29E;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+blockquote {
+    border-left: 0.25em solid #ccc;
+    margin: 0;
+    padding: 0 1em;
+    color: #777;
+}
