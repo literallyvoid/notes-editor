@@ -37,6 +37,10 @@ function createWindow() {
 	}
     });
 
+    globalShortcut.register('CommandOrControl+N', () => {
+	win.webContents.send('setPath', {path: null});
+    });
+
     globalShortcut.register('CommandOrControl+Shift+S', () => {
 	let file = dialog.showSaveDialog({});
 	if(file) {

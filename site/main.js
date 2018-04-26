@@ -38,7 +38,14 @@ ipcRenderer.on('saveFile', function(event, data) {
 });
 
 ipcRenderer.on('setPath', function(event, data) {
-    document.getElementById('filepath').textContent = data.path;
+    if(data.path == null) {
+	document.getElementById('filepath').textContent = 'Unsaved file';
+	document.getElementById('filepath').className = 'unsaved';
+	editor.setValue('');
+    } else {
+	document.getElementById('filepath').textContent = data.path;
+	document.getElementById('filepath').className = '';
+    }
 });
 
 ipcRenderer.on('fileSaved', function(event, data) {
