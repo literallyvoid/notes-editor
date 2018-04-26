@@ -7,8 +7,8 @@ let currentFile;
 
 function createWindow() {
     win = new BrowserWindow();
-
-    //win.setMenu(null);
+    
+    win.setMenu(null);
     
     globalShortcut.register('CommandOrControl+O', () => {
 	let file = dialog.showOpenDialog({
