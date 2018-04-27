@@ -70,13 +70,14 @@ function createWindow() {
 	protocol: 'site:',
 	slashes: true
     }));
-    let wc = win.webContents
+    let wc = win.webContents;
     wc.on('will-navigate', function (e, url) {
 	if (url != wc.getURL()) {
 	    e.preventDefault()
 	    shell.openExternal(url)
 	}
-    })
+    });
+
 }
 
 app.on('ready', createWindow);
